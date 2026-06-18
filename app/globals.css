@@ -128,12 +128,9 @@ h1, h2, h3, p { margin: 0; }
 .badge .dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; }
 .hero h1 { font-weight: 800; letter-spacing: -0.035em; line-height: 1.0; font-size: clamp(40px,5.4vw,88px); margin: 22px 0 0; }
 .hero-sub2 {
-  display: inline-block; background: var(--green); color: #fff;
-  text-transform: uppercase; font-weight: 800; letter-spacing: -0.01em; line-height: 1.08;
-  font-size: clamp(43px,5.22vw,76px); margin: 16px 0 0; padding: 6px 22px; border-radius: 18px;
-  box-shadow: 0 14px 32px rgba(14,164,78,0.26);
+  text-transform: uppercase; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
+  font-size: clamp(43px,5.22vw,76px); margin: 16px 0 0; color: var(--green);
 }
-.hero-sub2 span { color: #fff !important; }
 .hero-p { font-size: clamp(18px,1.45vw,21px); line-height: 1.62; color: #2C3744; margin: 26px 0 0; max-width: 44ch; font-weight: 500; text-wrap: pretty; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 .trust { display: flex; align-items: center; gap: 10px; margin-top: 24px; font-size: 14.5px; color: var(--gray); font-weight: 600; }
