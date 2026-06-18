@@ -211,7 +211,7 @@ export default function Home() {
                 </button>
               ))}
             </div>
-            <a href="#cta" className="btn-primary sm header-cta">{t.startSelling}</a>
+            <a href="#" data-lead className="btn-primary sm header-cta">{t.startSelling}</a>
           </div>
         </div>
       </header>
@@ -229,7 +229,7 @@ export default function Home() {
             <div data-reveal data-reveal-delay="140" className="hero-sub2" dangerouslySetInnerHTML={{ __html: t.hero.sub2Html }} />
             <p data-reveal data-reveal-delay="200" className="hero-p" dangerouslySetInnerHTML={{ __html: t.hero.pHtml }} />
             <div data-reveal data-reveal-delay="220" className="hero-cta">
-              <a href="#cta" className="btn-yellow" style={{ padding: "17px 32px", fontSize: "17px", borderRadius: "14px" }}>
+              <a href="#" data-lead className="btn-yellow" style={{ padding: "17px 32px", fontSize: "17px", borderRadius: "14px" }}>
                 {t.startSellingArrow}
               </a>
               <a href="#" data-lead className="btn-ghost">{t.contactManager}</a>
@@ -338,7 +338,7 @@ export default function Home() {
           <h2 data-reveal dangerouslySetInnerHTML={{ __html: t.cta.h2Html }} />
           <div data-reveal data-reveal-delay="110" className="cta-buttons">
             <a href="#" data-lead className="btn-yellow">{t.contactManager}</a>
-            <a href="#" className="btn-cta-ghost">{t.startSelling}</a>
+            <a href="#" data-lead className="btn-cta-ghost">{t.startSelling}</a>
           </div>
           <div data-reveal data-reveal-delay="200" className="cta-stores">
             <a href="#" className="btn-store">
