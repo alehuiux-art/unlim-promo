@@ -113,6 +113,8 @@ h1, h2, h3, p { margin: 0; }
   position: absolute; top: -160px; right: -120px; width: min(64vw,720px); height: 720px;
   background: radial-gradient(circle at 58% 46%, rgba(14,164,78,0.16), rgba(14,164,78,0) 64%); pointer-events: none;
 }
+/* On narrow screens the glow's box edge falls on-screen and shows a hard seam — hide it. */
+@media (max-width: 860px) { .hero-glow { display: none; } }
 .hero-grid {
   max-width: 1280px; margin: 0 auto;
   padding: clamp(40px,5vw,80px) clamp(20px,5vw,44px) clamp(28px,3vw,44px);
@@ -181,6 +183,8 @@ h1, h2, h3, p { margin: 0; }
 .feature--dark { background: var(--ink); padding: clamp(30px,3.4vw,60px); box-shadow: 0 20px 50px rgba(16,24,40,0.22); }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,360px),1fr)); gap: clamp(28px,4vw,56px); align-items: center; }
 .media--left { order: -1; }
+/* On mobile (single column) keep the image below the text in every card. */
+@media (max-width: 800px) { .media--left { order: 1; } }
 
 .feature-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
 .feature-num { font-size: 15px; font-weight: 800; letter-spacing: 0.04em; }
